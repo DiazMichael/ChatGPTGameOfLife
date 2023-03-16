@@ -4,7 +4,8 @@ Conway's "Game Of Life" create by ChatGPT with GPT-4 model
 
 # Full Text of Conversation with ChatGPT
 
-Mike Diaz
+## Prompt:
+```
 Create in javascript and html "the game of life" by John Conways.
 The game as an improvement tho. You can select 4 different types of cells:
 - Green
@@ -21,6 +22,10 @@ I should be able to select the different colors I would like to put on the grid.
 I would like to add a slider to control generation speed.
 I would like to be able to add cell both by click and by drag of the mouse.
 I would like the grid to be visible.
+```
+
+## ChatGPT reply (not formatted to also see that ChatGPT struggled to format correctly the messages)
+
 To create the Game of Life with the specified improvements, you can follow the code below. This implementation uses HTML, CSS, and JavaScript to create the game board and logic:
 
 Create an HTML file named "game_of_life.html":
@@ -147,9 +152,9 @@ canvas.addEventListener('mousedown', (e) => {
 canvas.addEventListener('
 
 
+## Next Message
 
-Mike Diaz
-next
+
 mousemove', (e) => {
 if (!isDrawing) return;
 const x = Math.floor(e.offsetX / cellSize);
@@ -231,8 +236,12 @@ This code creates a custom Game of Life with the specified improvements, includi
 
 
 
-Mike Diaz
-Can you check the weaknesses? It seems like yellow is weak against green and other weaknesses I have not specify
+## Asking to correct weaknesses
+
+Can you check the weaknesses? It seems like yellow is weak against green and other weaknesses I have not specify.
+
+## Fix of bug
+
 I apologize for the oversight. I see that I misunderstood the weaknesses in the initial implementation. Here's the corrected version of the "game_of_life.js" file with the specified weaknesses:
 
 javascript
